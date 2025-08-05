@@ -1,8 +1,8 @@
 
 //加载录取人数、报到率
 function regData(){
-	$("#factTotalNum").text(7000+Math.floor(Math.random()*100+1));
-	$("#totalNum").text(6500+Math.floor(Math.random()*100+1));
+	$("#factTotalNum").text(6000+Math.floor(Math.random()*100+1));
+	$("#totalNum").text(5500+Math.floor(Math.random()*100+1));
 	$("#totalNumRate").text(90+Math.floor(Math.random()*10+1)+'%');
 	
 	// 生成一致的男女生数据，调整为95%左右的报到率
