@@ -27,6 +27,8 @@
 	<!--滚动插件-->
 	<script type="text/javascript" src="./static/js/jquery.vticker-min.js"></script>
 	<script type="text/javascript" src="./static/js/bigdata.js"></script>
+	<!--音频系统-->
+	<script type="text/javascript" src="./static/js/audio-system.js"></script>
 	<script type="text/javascript">
 
 		var paramData = {"studentType":''};
@@ -72,7 +74,88 @@
 			setInterval(studentAge,1000*10);
 			//setInterval(selectCollege,1000*30);
 			setInterval(studentBedData,1000*10);
+			
+			// 初始化音频控制
+			initAudioControl();
 		})
+		
+		// 音频控制初始化函数
+		function initAudioControl() {
+			if (!window.simpleAudioPlayer) {
+				console.log('音频播放器未加载');
+				return;
+			}
+			
+			// 创建音频控制面板
+			const audioControlHTML = `
+				<div class="audio-control-panel" style="
+					position: fixed;
+					top: 10px;
+					right: 10px;
+					z-index: 1000;
+					background: rgba(15, 16, 43, 0.9);
+					border: 1px solid rgba(0, 255, 255, 0.3);
+					border-radius: 8px;
+					padding: 10px;
+					color: #00ffff;
+					font-family: Arial, sans-serif;
+					font-size: 12px;
+					box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+				">
+					<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+						<button id="audioToggle" style="
+							background: rgba(0, 255, 255, 0.2);
+							border: 1px solid #00ffff;
+							color: #00ffff;
+							padding: 4px 8px;
+							border-radius: 4px;
+							cursor: pointer;
+							font-size: 12px;
+						">🔊 开启音乐</button>
+						<span id="audioStatus">已关闭</span>
+					</div>
+					<div style="display: flex; align-items: center; gap: 8px;">
+						<label style="font-size: 11px;">音量:</label>
+						<input type="range" id="volumeControl" min="0" max="100" value="30" style="
+							width: 60px;
+							height: 4px;
+							background: rgba(0, 255, 255, 0.3);
+							border-radius: 2px;
+							outline: none;
+						">
+					</div>
+				</div>
+			`;
+			
+			document.body.insertAdjacentHTML('beforeend', audioControlHTML);
+			
+			const toggleBtn = document.getElementById('audioToggle');
+			const volumeControl = document.getElementById('volumeControl');
+			const statusText = document.getElementById('audioStatus');
+			
+			let isPlaying = false;
+			
+			toggleBtn.addEventListener('click', () => {
+				if (isPlaying) {
+					window.simpleAudioPlayer.pause();
+					toggleBtn.textContent = '🔊 开启音乐';
+					statusText.textContent = '已关闭';
+					isPlaying = false;
+				} else {
+					window.simpleAudioPlayer.play();
+					toggleBtn.textContent = '🔇 关闭音乐';
+					statusText.textContent = '播放中';
+					isPlaying = true;
+				}
+			});
+			
+			volumeControl.addEventListener('input', (e) => {
+				const volume = parseInt(e.target.value) / 100;
+				window.simpleAudioPlayer.setVolume(volume);
+			});
+			
+			console.log('音频控制系统已初始化');
+		}
 	</script>
 	<script type="text/javascript">
 		/*
@@ -175,8 +258,7 @@
 					$(".J_page1").fadeIn('slow', function() {});
 				}
 
-			},3000);
-
+			},10000);
 		});
 	</script>
 	<style>html{font-size: 115.9375px !important;}</style>
