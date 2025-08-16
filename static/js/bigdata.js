@@ -1,15 +1,15 @@
 
 //加载录取人数、报到率
 function regData(){
-	$("#factTotalNum").text(6000+Math.floor(Math.random()*100+1));
-	$("#totalNum").text(5500+Math.floor(Math.random()*100+1));
-	$("#totalNumRate").text(90+Math.floor(Math.random()*10+1)+'%');
+	$("#factTotalNum").text(7350+Math.floor(Math.random()*100));
+	$("#totalNum").text(7500+Math.floor(Math.random()*50));
+	$("#totalNumRate").text(98+Math.floor(Math.random()*2)+'%');
 	
-	// 生成一致的男女生数据，调整为95%左右的报到率
-	var manLuqu = 3774;
-	var manBaodao = Math.round(manLuqu * 0.95) + Math.floor(Math.random()*20-10); // 95%左右波动
-	var womanLuqu = 3357;
-	var womanBaodao = Math.round(womanLuqu * 0.95) + Math.floor(Math.random()*20-10); // 95%左右波动
+	// 生成一致的男女生数据，调整为98%左右的报到率
+	var manLuqu = 3850;
+	var manBaodao = Math.round(manLuqu * 0.98) + Math.floor(Math.random()*10-5); // 98%左右波动
+	var womanLuqu = 3650;
+	var womanBaodao = Math.round(womanLuqu * 0.98) + Math.floor(Math.random()*10-5); // 98%左右波动
 	var manRate = Math.round(manBaodao/manLuqu*100);
 	var womanRate = Math.round(womanBaodao/womanLuqu*100);
 	
@@ -26,11 +26,11 @@ function regData(){
 	$("#womanNumsRate2").text(womanRate+'%');
 }
 function studentBedData(){
-    // 使用与regData相同的逻辑，95%左右的报到率
-    var manLuqu = 3774;
-    var manBaodao = Math.round(manLuqu * 0.95) + Math.floor(Math.random()*20-10);
-    var womanLuqu = 3357;
-    var womanBaodao = Math.round(womanLuqu * 0.95) + Math.floor(Math.random()*20-10);
+    // 使用与regData相同的逻辑，98%左右的报到率
+    var manLuqu = 3850;
+    var manBaodao = Math.round(manLuqu * 0.98) + Math.floor(Math.random()*10-5);
+    var womanLuqu = 3650;
+    var womanBaodao = Math.round(womanLuqu * 0.98) + Math.floor(Math.random()*10-5);
     var manRate = Math.round(manBaodao/manLuqu*100);
     var womanRate = Math.round(womanBaodao/womanLuqu*100);
     
@@ -44,35 +44,35 @@ function studentBedData(){
 function studentRegisterTime(){
 	var da = [
 		{
-			"REGSTUNUM": 5250,
+			"REGSTUNUM": 5150,
 			"SJ": "08:00"
 		},
 		{
-			"REGSTUNUM": 5899,
+			"REGSTUNUM": 6200,
 			"SJ": "09:00"
 		},
 		{
-			"REGSTUNUM": 7581,
+			"REGSTUNUM": 7150,
 			"SJ": "10:00"
 		},
 		{
-			"REGSTUNUM": 9501,
+			"REGSTUNUM": 7350,
 			"SJ": "11:00"
 		},
 		{
-			"REGSTUNUM": 10023,
+			"REGSTUNUM": 7425,
 			"SJ": "12:00"
 		},
 		{
-			"REGSTUNUM": 10099,
+			"REGSTUNUM": 7480,
 			"SJ": "13:00"
 		},
 		{
-			"REGSTUNUM": 9829,
+			"REGSTUNUM": 7495,
 			"SJ": "14:00"
 		},
 		{
-			"REGSTUNUM": 9508,
+			"REGSTUNUM": 7500,
 			"SJ": "15:00"
 		}
 	];
