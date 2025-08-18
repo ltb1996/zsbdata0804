@@ -1,78 +1,78 @@
 
 //加载录取人数、报到率
 function regData(){
-	$("#factTotalNum").text(7350+Math.floor(Math.random()*100));
-	$("#totalNum").text(7500+Math.floor(Math.random()*50));
-	$("#totalNumRate").text(98+Math.floor(Math.random()*2)+'%');
+	$("#factTotalNum").text("xxx");
+	$("#totalNum").text("xxx");
+	$("#totalNumRate").text("xxx%");
 	
 	// 生成一致的男女生数据，调整为98%左右的报到率
-	var manLuqu = 3850;
-	var manBaodao = Math.round(manLuqu * 0.98) + Math.floor(Math.random()*10-5); // 98%左右波动
-	var womanLuqu = 3650;
-	var womanBaodao = Math.round(womanLuqu * 0.98) + Math.floor(Math.random()*10-5); // 98%左右波动
-	var manRate = Math.round(manBaodao/manLuqu*100);
-	var womanRate = Math.round(womanBaodao/womanLuqu*100);
+	var manLuqu = "xxx";
+	var manBaodao = "xxx";
+	var womanLuqu = "xxx";
+	var womanBaodao = "xxx";
+	var manRate = "xxx";
+	var womanRate = "xxx";
 	
 	// 更新页面1的数据
-	$("#factMan").text("男生报到"+manBaodao+"/"+manLuqu+"人");
-	$("#factWoman").text("女生报到"+womanBaodao+"/"+womanLuqu+"人");
-	$("#manNumsRate").text(manRate+'%');
-	$("#womanNumsRate").text(womanRate+'%');
+	$("#factMan").text("男生报到xxx/xxx人");
+	$("#factWoman").text("女生报到xxx/xxx人");
+	$("#manNumsRate").text('xxx%');
+	$("#womanNumsRate").text('xxx%');
 	
 	// 更新页面2的数据
-	$("#factMan2").text("男生报到"+manBaodao+"/"+manLuqu+"人");
-	$("#factWoman2").text("女生报到"+womanBaodao+"/"+womanLuqu+"人");
-	$("#manNumsRate2").text(manRate+'%');
-	$("#womanNumsRate2").text(womanRate+'%');
+	$("#factMan2").text("男生报到xxx/xxx人");
+	$("#factWoman2").text("女生报到xxx/xxx人");
+	$("#manNumsRate2").text('xxx%');
+	$("#womanNumsRate2").text('xxx%');
 }
 function studentBedData(){
     // 使用与regData相同的逻辑，98%左右的报到率
-    var manLuqu = 3850;
-    var manBaodao = Math.round(manLuqu * 0.98) + Math.floor(Math.random()*10-5);
-    var womanLuqu = 3650;
-    var womanBaodao = Math.round(womanLuqu * 0.98) + Math.floor(Math.random()*10-5);
-    var manRate = Math.round(manBaodao/manLuqu*100);
-    var womanRate = Math.round(womanBaodao/womanLuqu*100);
+    var manLuqu = "xxx";
+    var manBaodao = "xxx";
+    var womanLuqu = "xxx";
+    var womanBaodao = "xxx";
+    var manRate = "xxx";
+    var womanRate = "xxx";
     
-    $("#factMan2").text("男生报到"+manBaodao+"/"+manLuqu+"人");
-    $("#factWoman2").text("女生报到"+womanBaodao+"/"+womanLuqu+"人");
-    $("#manNumsRate2").text(manRate+'%');
-    $("#womanNumsRate2").text(womanRate+'%');
+    $("#factMan2").text("男生报到xxx/xxx人");
+    $("#factWoman2").text("女生报到xxx/xxx人");
+    $("#manNumsRate2").text('xxx%');
+    $("#womanNumsRate2").text('xxx%');
 }
 
 //加载各时段已报到人数
 function studentRegisterTime(){
 	var da = [
 		{
-			"REGSTUNUM": 5150,
+			"REGSTUNUM": "xxx",
 			"SJ": "08:00"
 		},
 		{
-			"REGSTUNUM": 6200,
+			"REGSTUNUM": "xxx",
 			"SJ": "09:00"
 		},
 		{
-			"REGSTUNUM": 7150,
+			"REGSTUNUM": "xxx",
 			"SJ": "10:00"
 		},
 		{
-			"REGSTUNUM": 7350,
+			"REGSTUNUM": "xxx",
 			"SJ": "11:00"
 		},
 		{
-			"REGSTUNUM": 7425,
+			"REGSTUNUM": "xxx",
 			"SJ": "12:00"
 		},
 		{
-			"REGSTUNUM": 7480,
+			"REGSTUNUM": "xxx",
 			"SJ": "13:00"
 		},
 		{
-			"REGSTUNUM": 7495,
+			"REGSTUNUM": "xxx",
 			"SJ": "14:00"
 		},
 		{
-			"REGSTUNUM": 7500,
+			"REGSTUNUM": "xxx",
 			"SJ": "15:00"
 		}
 	];
@@ -330,127 +330,127 @@ function map(){
 data = [
 	{
 		"name": "上海",
-		"value": 5500
+		"value": "xxx"
 	},
 	{
 		"name": "四川",
-		"value": 218
+		"value": "xxx"
 	},
 	{
 		"name": "浙江",
-		"value": 111
+		"value": "xxx"
 	},
 	{
 		"name": "广东",
-		"value": 66
+		"value": "xxx"
 	},
 	{
 		"name": "湖北",
-		"value": 120
+		"value": "xxx"
 	},
 	{
 		"name": "甘肃",
-		"value": 99
+		"value": "xxx"
 	},
 	{
 		"name": "内蒙古",
-		"value": 107
+		"value": "xxx"
 	},
 	{
 		"name": "黑龙江",
-		"value": 71
+		"value": "xxx"
 	},
 	{
 		"name": "陕西",
-		"value": 47
+		"value": "xxx"
 	},
 	{
 		"name": "新疆",
-		"value": 55
+		"value": "xxx"
 	},
 	{
 		"name": "江苏",
-		"value": 122
+		"value": "xxx"
 	},
 	{
 		"name": "广西",
-		"value": 109
+		"value": "xxx"
 	},
 	{
 		"name": "安徽",
-		"value": 314
+		"value": "xxx"
 	},
 	{
 		"name": "青海",
-		"value": 30
+		"value": "xxx"
 	},
 	{
 		"name": "山东",
-		"value": 219
+		"value": "xxx"
 	},
 	{
 		"name": "吉林",
-		"value": 47
+		"value": "xxx"
 	},
 	{
 		"name": "福建",
-		"value": 92
+		"value": "xxx"
 	},
 	{
 		"name": "重庆",
-		"value": 62
+		"value": "xxx"
 	},
 	{
 		"name": "河南",
-		"value": 791
+		"value": "xxx"
 	},
 	{
 		"name": "天津",
-		"value": 102
+		"value": "xxx"
 	},
 	{
 		"name": "海南",
-		"value": 101
+		"value": "xxx"
 	},
 	{
 		"name": "北京",
-		"value": 14
+		"value": "xxx"
 	},
 	{
 		"name": "江西",
-		"value": 112
+		"value": "xxx"
 	},
 	{
 		"name": "贵州",
-		"value": 81
+		"value": "xxx"
 	},
 	{
 		"name": "云南",
-		"value": 69
+		"value": "xxx"
 	},
 	{
 		"name": "河北",
-		"value": 290
+		"value": "xxx"
 	},
 	{
 		"name": "山西",
-		"value": 235
+		"value": "xxx"
 	},
 	{
 		"name": "湖南",
-		"value": 137
+		"value": "xxx"
 	},
 	{
 		"name": "辽宁",
-		"value": 50
+		"value": "xxx"
 	},
 	{
 		"name": "宁夏",
-		"value": 72
+		"value": "xxx"
 	},
 	{
 		"name": "西藏",
-		"value": 10
+		"value": "xxx"
 	}
 ];
 	var convertData = function (data) {
@@ -567,8 +567,8 @@ data = [
 	            }
 	        },
 			visualMap: {
-	            min: 100,
-	            max: 5000,
+	            min: "xxx",
+	            max: "xxx",
 	            realtime: false,
 	            calculable: false,
 	            itemWidth : 10,
@@ -677,56 +677,56 @@ function stuNation(){
 		{
 			"name": "回族",
 			"mzbm": "03",
-			"value": 84,
-			"bfb": "29.89%"
+			"value": "xxx",
+			"bfb": "xxx%"
 		},
 		{
 			"name": "壮族",
 			"mzbm": "08",
-			"value": 43,
-			"bfb": "15.3%"
+			"value": "xxx",
+			"bfb": "xxx%"
 		},
 		{
 			"name": "蒙古族",
 			"mzbm": "02",
-			"value": 31,
-			"bfb": "11.03%"
+			"value": "xxx",
+			"bfb": "xxx%"
 		},
 		{
 			"name": "满族",
 			"mzbm": "11",
-			"value": 31,
-			"bfb": "11.03%"
+			"value": "xxx",
+			"bfb": "xxx%"
 		},
 		{
 			"name": "土家族",
 			"mzbm": "15",
-			"value": 23,
-			"bfb": "8.19%"
+			"value": "xxx",
+			"bfb": "xxx%"
 		},
 		{
 			"name": "苗族",
 			"mzbm": "06",
-			"value": 18,
-			"bfb": "6.41%"
+			"value": "xxx",
+			"bfb": "xxx%"
 		},
 		{
 			"name": "彝族",
 			"mzbm": "07",
-			"value": 8,
-			"bfb": "2.85%"
+			"value": "xxx",
+			"bfb": "xxx%"
 		},
 		{
 			"name": "黎族",
 			"mzbm": "19",
-			"value": 6,
-			"bfb": "2.14%"
+			"value": "xxx",
+			"bfb": "xxx%"
 		},
 		{
 			"name": "其他",
 			"mzbm": "10,12,14,09,16,13,22,20,00,29,35,36,23,05,30,",
-			"value": 29,
-			"bfb": 10.359999999999998
+			"value": "xxx",
+			"bfb": "xxx"
 		}
 	];
 	optionNation(data);
@@ -853,115 +853,115 @@ function studentAge(){
 	var da = [
 		{
 			"name": 15,
-			"value": 1
+			"value": "xxx"
 		},
 		{
 			"name": 16,
-			"value": 8
+			"value": "xxx"
 		},
 		{
 			"name": 17,
-			"value": 29
+			"value": "xxx"
 		},
 		{
 			"name": 18,
-			"value": 542
+			"value": "xxx"
 		},
 		{
 			"name": 19,
-			"value": 4964
+			"value": "xxx"
 		},
 		{
 			"name": 20,
-			"value": 2304
+			"value": "xxx"
 		},
 		{
 			"name": 21,
-			"value": 513
+			"value": "xxx"
 		},
 		{
 			"name": 22,
-			"value": 239
+			"value": "xxx"
 		},
 		{
 			"name": 23,
-			"value": 432
+			"value": "xxx"
 		},
 		{
 			"name": 24,
-			"value": 440
+			"value": "xxx"
 		},
 		{
 			"name": 25,
-			"value": 249
+			"value": "xxx"
 		},
 		{
 			"name": 26,
-			"value": 105
+			"value": "xxx"
 		},
 		{
 			"name": 27,
-			"value": 49
+			"value": "xxx"
 		},
 		{
 			"name": 28,
-			"value": 37
+			"value": "xxx"
 		},
 		{
 			"name": 29,
-			"value": 23
+			"value": "xxx"
 		},
 		{
 			"name": 30,
-			"value": 8
+			"value": "xxx"
 		},
 		{
 			"name": 31,
-			"value": 19
+			"value": "xxx"
 		},
 		{
 			"name": 32,
-			"value": 13
+			"value": "xxx"
 		},
 		{
 			"name": 33,
-			"value": 16
+			"value": "xxx"
 		},
 		{
 			"name": 34,
-			"value": 13
+			"value": "xxx"
 		},
 		{
 			"name": 35,
-			"value": 8
+			"value": "xxx"
 		},
 		{
 			"name": 36,
-			"value": 5
+			"value": "xxx"
 		},
 		{
 			"name": 37,
-			"value": 4
+			"value": "xxx"
 		},
 		{
 			"name": 38,
-			"value": 2
+			"value": "xxx"
 		},
 		{
 			"name": 39,
-			"value": 3
+			"value": "xxx"
 		},
 		{
 			"name": 40,
-			"value": 1
+			"value": "xxx"
 		},
 		{
 			"name": 41,
-			"value": 2
+			"value": "xxx"
 		},
 		{
 			"name": 42,
-			"value": 1
+			"value": "xxx"
 		}
 	];
 	var data = []
